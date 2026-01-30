@@ -3,34 +3,86 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>S16181 | Contact</title>
+  <title>AFP | Links</title>
+  <meta name="description" content="Useful links for the ERLC server and AFP department." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
-      <a class="logo" href="index.html">S16181</a>
-      <nav class="nav">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <span class="badge" aria-hidden="true"></span>
+        <span>
+          AFP — ERLC Roleplay
+          <small>Australian Federal Police Department</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="about.html">Department Info</a>
+        <a class="active" href="contact.html">Links</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Contact</h1>
-      <p>Add your email, socials, or a contact form later.</p>
-      <p><strong>Email:</strong> you@example.com</p>
+  <main id="content" class="container">
+    <!-- Banner -->
+    <section class="banner" role="banner">
+      <div class="banner-inner">
+        <div>
+          <h1>Links</h1>
+          <p>
+            Handy resources for the server: invites, rules, forms, guides, and anything else you want
+            members to access quickly.
+          </p>
+        </div>
+        <div class="banner-right">
+          <div>Quick Access</div>
+          <div class="chip-row">
+            <span class="chip">Server</span>
+            <span class="chip">Docs</span>
+            <span class="chip">Guides</span>
+          </div>
+        </div>
+      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> S16181</small>
-    </div>
-  </footer>
+    <section class="section">
+      <div class="section-title">
+        <h2>Recommended</h2>
+        <span>Add or remove anytime.</span>
+      </div>
+
+      <div class="grid two">
+        <a class="link-card" href="#" target="_blank" rel="noopener">
+          <h3>Server Invite (Discord)</h3>
+          <p>Put your Discord invite here.</p>
+        </a>
+
+        <a class="link-card" href="#" target="_blank" rel="noopener">
+          <h3>Server Rules</h3>
+          <p>Link to rules document or website.</p>
+        </a>
+
+        <a class="link-card" href="#" target="_blank" rel="noopener">
+          <h3>Department Applications</h3>
+          <p>Link to application form (Google Form, etc.).</p>
+        </a>
+
+        <a class="link-card" href="#" target="_blank" rel="noopener">
+          <h3>Training / SOP Document</h3>
+          <p>Link to SOP/training resources for members.</p>
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <small>© <span id="year"></span> AFP ERLC Department • Not affiliated with any real-world agency</small>
+    </footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>
