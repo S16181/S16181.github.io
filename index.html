@@ -29,8 +29,14 @@
   </header>
 
   <main id="content" class="container">
-    <!-- Banner -->
-    <section class="banner" role="banner">
+    <!-- Home Banner (AFP4.webp) with parallax -->
+    <section
+      class="banner banner--photo"
+      role="banner"
+      data-parallax
+      data-strength="0.25"
+      style="background-image: url('images/AFP4.webp');"
+    >
       <div class="banner-inner">
         <div>
           <h1>Welcome to the AFP</h1>
@@ -73,11 +79,11 @@
         </div>
       </div>
       <div class="note" style="margin-top:14px;">
-        Tip: This site uses placeholder images for now — we’ll swap them with AFP/unit/vehicle images later.
+        Tip: You can click the arrows or dots on the carousels — they also auto-rotate.
       </div>
     </section>
 
-    <!-- Carousel: Sub Departments -->
+    <!-- Carousel: Sub Departments (AFP10 + AFP9) -->
     <section class="section">
       <div class="section-title">
         <h2>Sub Departments</h2>
@@ -105,8 +111,8 @@
                   Who should join? Add a few sentences here.
                 </p>
               </div>
-              <div class="placeholder-img" aria-label="Unit 1 image placeholder">
-                Unit Image Placeholder
+              <div class="slide-media">
+                <img src="images/AFP10.webp" alt="Sub Department Unit 1 image" />
               </div>
             </article>
 
@@ -119,8 +125,91 @@
                   or any special training this unit focuses on.
                 </p>
               </div>
-              <div class="placeholder-img" aria-label="Unit 2 image placeholder">
-                Unit Image Placeholder
+              <div class="slide-media">
+                <img src="images/AFP9.webp" alt="Sub Department Unit 2 image" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel 2: Propaganda (remaining images) -->
+    <section class="section">
+      <div class="section-title">
+        <h2>Propaganda</h2>
+        <span>Department moments, posters, and highlights.</span>
+      </div>
+
+      <div class="carousel" data-carousel data-auto="true" data-interval="5500" tabindex="0" aria-label="Propaganda carousel">
+        <div class="carousel-top">
+          <h3>Propaganda</h3>
+          <div class="carousel-controls">
+            <button class="c-btn" type="button" data-prev aria-label="Previous slide">◀</button>
+            <div class="dots" aria-label="Slide dots"></div>
+            <button class="c-btn" type="button" data-next aria-label="Next slide">▶</button>
+          </div>
+        </div>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <article class="slide">
+              <div>
+                <h4>Highlight 1</h4>
+                <p>Placeholder caption — swap this text for a short “poster style” line.</p>
+              </div>
+              <div class="slide-media">
+                <img src="images/AFP1.webp" alt="AFP propaganda image 1" />
+              </div>
+            </article>
+
+            <article class="slide">
+              <div>
+                <h4>Highlight 2</h4>
+                <p>Placeholder caption — keep it short and punchy.</p>
+              </div>
+              <div class="slide-media">
+                <img src="images/AFP3.webp" alt="AFP propaganda image 3" />
+              </div>
+            </article>
+
+            <article class="slide">
+              <div>
+                <h4>Highlight 3</h4>
+                <p>Placeholder caption — e.g. “Protecting what’s ours.”</p>
+              </div>
+              <div class="slide-media">
+                <img src="images/AFP5.webp" alt="AFP propaganda image 5" />
+              </div>
+            </article>
+
+            <article class="slide">
+              <div>
+                <h4>Highlight 4</h4>
+                <p>Placeholder caption — anything you want members to remember.</p>
+              </div>
+              <div class="slide-media">
+                <img src="images/AFP6.webp" alt="AFP propaganda image 6" />
+              </div>
+            </article>
+
+            <article class="slide">
+              <div>
+                <h4>Highlight 5</h4>
+                <p>Placeholder caption — training, teamwork, action.</p>
+              </div>
+              <div class="slide-media">
+                <img src="images/AFP7.webp" alt="AFP propaganda image 7" />
+              </div>
+            </article>
+
+            <article class="slide">
+              <div>
+                <h4>Highlight 6</h4>
+                <p>Placeholder caption — recruitment style line, if you want.</p>
+              </div>
+              <div class="slide-media">
+                <img src="images/AFP8.webp" alt="AFP propaganda image 8" />
               </div>
             </article>
           </div>
