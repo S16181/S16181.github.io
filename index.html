@@ -3,57 +3,135 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>S16181 | Home</title>
-  <meta name="description" content="My website hosted on GitHub Pages." />
-
+  <title>AFP | Home</title>
+  <meta name="description" content="Australian Federal Police | ERLC Roleplay Department" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="index.html">S16181</a>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-      <nav class="nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <span class="badge" aria-hidden="true"></span>
+        <span>
+          AFP — ERLC Roleplay
+          <small>Australian Federal Police Department</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="department.html">Department Info</a>
+        <a href="links.html">Links</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Welcome 👋</h1>
-      <p>This site is built with plain HTML + CSS and hosted on GitHub Pages.</p>
-      <div class="hero-actions">
-        <a class="btn" href="about.html">Learn more</a>
-        <a class="btn btn-outline" href="contact.html">Contact</a>
+  <main id="content" class="container">
+    <!-- Banner -->
+    <section class="banner" role="banner">
+      <div class="banner-inner">
+        <div>
+          <h1>Welcome to the AFP</h1>
+          <p>
+            This is the official department site for our ERLC private server. Here you’ll find unit info,
+            vehicle/livery details, and useful links to help you get started.
+          </p>
+        </div>
+        <div class="banner-right">
+          <div>Server Department Hub</div>
+          <div class="chip-row">
+            <span class="chip">Fun & Friendly</span>
+            <span class="chip">Clear Info</span>
+            <span class="chip">Roleplay Ready</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="cards">
-      <article class="card">
-        <h2>Project 1</h2>
-        <p>A short description of something you’re building.</p>
-      </article>
-
-      <article class="card">
-        <h2>Project 2</h2>
-        <p>Another short description. You can add links later.</p>
-      </article>
-
-      <article class="card">
-        <h2>Project 3</h2>
-        <p>This layout is responsive without any frameworks.</p>
-      </article>
+    <!-- General Info -->
+    <section class="section">
+      <div class="section-title">
+        <h2>Quick Info</h2>
+        <span>New here? Start with this.</span>
+      </div>
+      <div class="grid two">
+        <div class="card">
+          <h3>How to Join</h3>
+          <p>
+            Use the Links page to find the server invite, department documents, and any required forms.
+            Once approved, you’ll be assigned your starting rank and unit.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Department Expectations</h3>
+          <p>
+            Keep roleplay realistic, treat others with respect, and follow server rules.
+            We aim for professional vibes without being overly formal.
+          </p>
+        </div>
+      </div>
+      <div class="note" style="margin-top:14px;">
+        Tip: This site uses placeholder images for now — we’ll swap them with AFP/unit/vehicle images later.
+      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> S16181</small>
-    </div>
-  </footer>
+    <!-- Carousel: Sub Departments -->
+    <section class="section">
+      <div class="section-title">
+        <h2>Sub Departments</h2>
+        <span>Two key units you can join.</span>
+      </div>
+
+      <div class="carousel" data-carousel data-auto="true" data-interval="6500" tabindex="0" aria-label="Sub Departments carousel">
+        <div class="carousel-top">
+          <h3>Sub Departments</h3>
+          <div class="carousel-controls">
+            <button class="c-btn" type="button" data-prev aria-label="Previous slide">◀</button>
+            <div class="dots" aria-label="Slide dots"></div>
+            <button class="c-btn" type="button" data-next aria-label="Next slide">▶</button>
+          </div>
+        </div>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <!-- Slide 1 -->
+            <article class="slide">
+              <div>
+                <h4>Unit 1 — Placeholder Name</h4>
+                <p>
+                  Short description of the unit. What do they do? What roleplay style is it?
+                  Who should join? Add a few sentences here.
+                </p>
+              </div>
+              <div class="placeholder-img" aria-label="Unit 1 image placeholder">
+                Unit Image Placeholder
+              </div>
+            </article>
+
+            <!-- Slide 2 -->
+            <article class="slide">
+              <div>
+                <h4>Unit 2 — Placeholder Name</h4>
+                <p>
+                  Another short description. Mention typical patrol style, responsibilities,
+                  or any special training this unit focuses on.
+                </p>
+              </div>
+              <div class="placeholder-img" aria-label="Unit 2 image placeholder">
+                Unit Image Placeholder
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <small>© <span id="year"></span> AFP ERLC Department • Not affiliated with any real-world agency</small>
+    </footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>
