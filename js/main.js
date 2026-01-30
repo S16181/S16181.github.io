@@ -72,10 +72,53 @@ function initCarousel(root) {
     if (e.key === "ArrowRight") goTo(index + 1);
   });
 
-  // Start
   update();
   startAuto();
 }
 
-// Init all carousels on page
 document.querySelectorAll("[data-carousel]").forEach(initCarousel);
+
+/**
+ * Parallax banner backgrounds
+ * - Elements should have: data-parallax
+ * - Optional: data-strength (default 0.25)
+ *
+ * We adjust background-position-y as you scroll.
+ */
+(function initParallaxBanners() {
+  const els = Array.from(document.querySelectorAll("[data-parallax]"));
+  if (els.length === 0) return;
+
+  function updateParallax() {
+    const vh = window.innerHeight || 800;
+
+    for (const el of els) {
+      const rect = el.getBoundingClientRect();
+      const strength = Number(el.getAttribute("data-strength") || "0.25");
+
+      // progress: element midpoint relative to viewport midpoint
+      const elMid = rect.top + rect.height / 2;
+      const viewMid = vh / 2;
+      const delta = (elMid - viewMid) * strength;
+
+      // base of 50% plus delta
+      el.style.backgroundPosition = `center calc(50% + ${delta}px)`;
+    }
+  }
+
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(() => {
+      updateParallax();
+      ticking = false;
+    });
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+
+  // initial
+  updateParallax();
+})();
