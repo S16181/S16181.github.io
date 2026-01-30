@@ -3,33 +3,175 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>S16181 | About</title>
+  <title>AFP | Department Information</title>
+  <meta name="description" content="Department information, vehicles, liveries, and command profiles." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
   <header class="site-header">
-    <div class="container">
-      <a class="logo" href="index.html">S16181</a>
-      <nav class="nav">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <span class="badge" aria-hidden="true"></span>
+        <span>
+          AFP — ERLC Roleplay
+          <small>Australian Federal Police Department</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
-        <a href="about.html" class="active">About</a>
-        <a href="contact.html">Contact</a>
+        <a class="active" href="about.html">Department Info</a>
+        <a href="contact.html">Links</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>About</h1>
-      <p>Write a short intro about who you are and what this site is for.</p>
+  <main id="content" class="container">
+    <!-- Banner -->
+    <section class="banner" role="banner">
+      <div class="banner-inner">
+        <div>
+          <h1>Department Information</h1>
+          <p>
+            Everything you need to know about our AFP department: vehicle fleet, liveries,
+            and high-ranking officers.
+          </p>
+        </div>
+        <div class="banner-right">
+          <div>Operational Overview</div>
+          <div class="chip-row">
+            <span class="chip">Vehicles</span>
+            <span class="chip">Liveries</span>
+            <span class="chip">Command</span>
+          </div>
+        </div>
+      </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© <span id="year"></span> S16181</small>
-    </div>
-  </footer>
+    <!-- General Info -->
+    <section class="section">
+      <div class="section-title">
+        <h2>General Information</h2>
+        <span>Rules, training, and behaviour.</span>
+      </div>
+      <div class="grid two">
+        <div class="card">
+          <h3>Training & Standards</h3>
+          <p>
+            Put your training process here: onboarding, ride-alongs, radio procedure, escalation, etc.
+            Keep it simple and easy to scan.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Roleplay Guidelines</h3>
+          <p>
+            Add a short list of expectations: realism, teamwork, no powergaming, follow server rules.
+            You can link to the full rules on the Links page.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel: Vehicles / Liveries -->
+    <section class="section">
+      <div class="section-title">
+        <h2>Vehicles / Liveries</h2>
+        <span>Swipe through the fleet.</span>
+      </div>
+
+      <div class="carousel" data-carousel data-auto="true" data-interval="6000" tabindex="0" aria-label="Vehicles and liveries carousel">
+        <div class="carousel-top">
+          <h3>Vehicles / Liveries</h3>
+          <div class="carousel-controls">
+            <button class="c-btn" type="button" data-prev aria-label="Previous slide">◀</button>
+            <div class="dots" aria-label="Slide dots"></div>
+            <button class="c-btn" type="button" data-next aria-label="Next slide">▶</button>
+          </div>
+        </div>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <!-- Add/remove slides as needed -->
+            <article class="slide">
+              <div>
+                <h4>Vehicle 1 — Patrol SUV</h4>
+                <p>
+                  Notes: where it’s used, which unit uses it, any livery variants, and when to deploy it.
+                </p>
+              </div>
+              <div class="placeholder-img" aria-label="Vehicle 1 image placeholder">
+                Vehicle Image Placeholder
+              </div>
+            </article>
+
+            <article class="slide">
+              <div>
+                <h4>Vehicle 2 — Patrol Sedan</h4>
+                <p>
+                  Notes: general use, recommended situations, any restrictions, etc.
+                </p>
+              </div>
+              <div class="placeholder-img" aria-label="Vehicle 2 image placeholder">
+                Vehicle Image Placeholder
+              </div>
+            </article>
+
+            <article class="slide">
+              <div>
+                <h4>Vehicle 3 — Specialist Unit Vehicle</h4>
+                <p>
+                  Notes: used for higher-risk incidents, command approval required, or unit-only access.
+                </p>
+              </div>
+              <div class="placeholder-img" aria-label="Vehicle 3 image placeholder">
+                Vehicle Image Placeholder
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profiles -->
+    <section class="section">
+      <div class="section-title">
+        <h2>High Ranking Officers</h2>
+        <span>Command structure and contacts.</span>
+      </div>
+
+      <div class="grid three">
+        <div class="profile">
+          <div class="avatar" aria-label="Officer image placeholder">IMG</div>
+          <div>
+            <h3>Commissioner</h3>
+            <div class="meta">Username: <strong>PlaceholderUser1</strong></div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="avatar" aria-label="Officer image placeholder">IMG</div>
+          <div>
+            <h3>Deputy Commissioner</h3>
+            <div class="meta">Username: <strong>PlaceholderUser2</strong></div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="avatar" aria-label="Officer image placeholder">IMG</div>
+          <div>
+            <h3>Assistant Commissioner</h3>
+            <div class="meta">Username: <strong>PlaceholderUser3</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <small>© <span id="year"></span> AFP ERLC Department • Not affiliated with any real-world agency</small>
+    </footer>
+  </main>
 
   <script src="js/main.js"></script>
 </body>
