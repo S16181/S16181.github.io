@@ -324,6 +324,7 @@ body{
   gap: 14px;
   align-items: center;
 }
+
 .propaganda-caption{
   margin-top: 6px;
   font-size: 0.75rem;
@@ -343,6 +344,7 @@ body{
   border: 1px solid rgba(255,255,255,0.16);
   background: rgba(255,255,255,0.04);
 }
+
 /* Image-only carousel slides (Propaganda) */
 .slide.image-only{
   grid-template-columns: 1fr;
@@ -366,6 +368,26 @@ body{
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+/* =========================
+   Propaganda size override (smaller images)
+   Add class="carousel propaganda" in HTML
+   ========================= */
+.propaganda .slide{
+  grid-template-columns: 1fr;
+}
+
+.propaganda .slide-media{
+  aspect-ratio: 16 / 7;
+  max-height: 260px;
+}
+
+@media (max-width: 900px){
+  .propaganda .slide-media{
+    aspect-ratio: 16 / 8;
+    max-height: 220px;
+  }
 }
 
 /* =========================
@@ -394,6 +416,7 @@ body{
   color: rgba(255,255,255,0.6);
   font-weight: 800;
   letter-spacing: 0.3px;
+  overflow: hidden;
 }
 
 .profile h3{ margin: 0; font-size: 1.05rem; }
